@@ -42,6 +42,6 @@ public class TypeString {
   s = "four: " + 2 + 2;// yields string 'four: 22'
   System.out.println(s);
   s = "four: " + (2 + 2); //yields string 'four: 4'
-  System.out.println(s);
+  System.out.println(s); 
   }
 }
