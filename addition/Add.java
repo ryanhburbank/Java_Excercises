@@ -11,9 +11,14 @@ public class Add {
       System.out.println("num2 == " + num2);
     } //end of block
 
-    System.out.println("This is num: " + num);
-
     System.out.print("The sum of " + num + " and " + num2 + " is: ");
     System.out.println(num + num2);
+    int i, y;
+    y = 0;
+    for (i = 0; i < num / 50; i++ ) { //target of this loop is a block
+      System.out.print(y + " + 50 equals: ");
+      y += 50;
+      System.out.println(y);
+    }
   }
 }
