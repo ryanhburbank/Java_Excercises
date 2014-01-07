@@ -23,3 +23,24 @@
     */
   }
  }
+
+ /* '\' is for the single-quote character.
+ '\n' is for the newline character.
+ for octal notation, use backslash with a 3 digit number
+ example: '\141' is the letter 'a'
+ for hexadecimal, enter a backslash-u(\u), then exactly 4
+ hexadecimal digits.  For example '\u0061' is 'a' because the top byte is 0
+ '\ua432' is a Japanese character
+
+ Escape Value List add to '\':
+ ddd :octal character
+ uxxxx : hexadecimal character
+ ' : single quote
+ " : double quote
+ \ : backslash
+ r : carriage return
+ n : new line
+ f : form feed
+ t : tab
+ b : backspace
+ */
