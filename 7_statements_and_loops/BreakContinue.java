@@ -5,6 +5,11 @@ make break statement exit two layers of the nested
 for loop
 */
 
+/** A simple class for examining how break and continue works
+ *
+ * @author Ryan H Burbank
+ *
+ */
 public class BreakContinue {
   public static void main(String args[]) {
     outer: for (int i = 0; i < 10; i ++){
