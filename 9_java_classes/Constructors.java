@@ -21,11 +21,15 @@
     double height;
     double area;
 
-    Rectangle() {
+    Rectangle() { //note: default constructor has no parameters
       width = 10;
       height = 10;
     }
-
+    /*if you do not declare a default constructor, the compiler
+    will add it for you.  the compilers defaul constructor initializes
+    class member variables with their default value.
+    */
+  
     double area() {
       return width * height;
     }
