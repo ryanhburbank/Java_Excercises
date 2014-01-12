@@ -63,10 +63,30 @@ public class Intro {
     Box myBox = new Box();
     myBox.width = 10;
 
-    System.out.println("myBox.width:" + myBox.width);
-  /* mybox is an instance of Box.  mybox contains its 
-  own copy of each instance variable, width, height, and depth,
-  each originally defined by the class.  To access these variables
-  you the '.' operator
+    System.out.println(myBox.height);
   }
 }
+  /* mybox(line 63) is an instance of a Box object(line 55).  mybox contains its 
+  own copy of each instance variable, width, height, and depth,
+  each originally defined by the class.  To access these variables
+  you use the '.' operator
+  
+  Object Reference Variable
+  object reference variables act differently when an assignment takes
+  place:
+  
+  example:
+  Box b1 = new Box();
+  Box b2 = b1;
+  after this executes, b1 and b2 will both refer to the same object
+  the assignment of b1 to b2 did not allocate any memory or copy any
+  part of the original object.  
+  Simply the variable b2 now points to the same object as the variable b1
+  Any changes made to the object through b2 will affect the object to which 
+  b1 is referring 
+  a reassignment of b1 will not affect b2
+  example: Box b1 = new Box();
+    Box b2 = b1;
+    b1 = null; b2 is still poinitng a the Box object created on 88
+
+  */
