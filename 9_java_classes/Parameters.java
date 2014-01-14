@@ -8,7 +8,7 @@
 /* Parameters allow a method to be generalized by operating
 on a variety of data.
 
-Syntax: type methodName (paramter Type variable1, paramter Type2 variable2,...){
+Syntax: type methodName (parameter Type variable1, paramter Type2 variable2,...){
   //method body
 }
 Example: Rectangle class has a method to accept dimensions
@@ -20,6 +20,21 @@ class Rectangle {
 
   double area() {
     return width * height;
+  }
+
+  Rectangle(Rectangle ob){ //can now initialize a Rectangle by passing another Rectangle
+    width = ob.width; //Rectangles values will match the passed Rectangle
+    height = ob.height;
+  }
+
+  Rectangle(double w, double h){
+    width = w; //can also pass width and height values to
+    height = h; //create rectangle
+  }
+
+  Rectangle() { //default when nothing passed
+    width = -1; //-1 indicates variables uninitialized
+    height = -1;
   }
 
   void setDim(double w, double h) {
